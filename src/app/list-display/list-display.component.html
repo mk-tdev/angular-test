@@ -1,0 +1,14 @@
+<p>list-display works!</p>
+
+<ng-container *ngIf="limitReached; else elseTemplate">
+  <p>Limit Reached</p>
+</ng-container>
+<ng-template #elseTemplate>
+  <p>Limit Not Reached</p>
+</ng-template>
+
+
+<p>{{favoriteItems}}</p>
+
+<button (click)="setFavItemsListCount()">Set Fav Items</button>
+<button (click)="setMaxFavItemsListCount()">Set Max Fav Items</button>
